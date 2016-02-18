@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+input[type="number"], input[type="time"]{
+  height: 22px;
+  line-height: 22px !important;
+  vertical-align: middle;
+  padding: 0 0 0 10px !important;
+  margin-left: 10px !important;
+  max-width: 70px;
+  border: 1px solid rgb(191, 191, 191);
+  border-radius: 2px;
+}
+
+input[type="number"] {
+  width: 50px;
+}
+
+.container {
+  width: 800px;
+  margin: 20px 15px auto;
+  padding: 0;
+  color: #505050!important;
+  float: left;
+  height: 380px;
+}
+
+.list {
+  width: 800px;
+  margin-bottom: 80px;
+  padding: 0;
+  list-style: none;
+  float: left;
+}
+
+.list li {
+  min-height: 40px;
+}
+
+.list li #nag-nanny:checked ~ div {
+  height: 110px
+}
+
+.list li #pomodoro-mode:checked ~ div {
+  height: 200px;
+}
+
+.list li label {
+  font-size: 14px;
+  height: 22px;
+  line-height: 22px;
+  vertical-align: middle;
+}
+
+.list li input[type="checkbox"]{
+  height: 1.3em;
+  width: 1.3em;
+  margin: 0px 0.4em 0.3em 0px;
+}
+
+.subsettings-details  {
+  overflow: hidden;
+  height: 0px;
+  margin-left: 10px;
+  transition:height 300ms ease-in-out;
+}
+
+.subsettings-details p {
+  float: left;
+  padding-right: 30px;
+}
+
+.subsettings-details p:last-child {
+  float: none;
+  clear: both;
+}
+
+.subsettings-details span {
+  display: block;
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+.footer {
+  padding: 10px 15px;
+  min-width: 800px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #e5e5e5;
+  font-size: 12px;
+  color: #8A8888;
+  float: left;
+}
+
+.changelog {
+  position: absolute;
+  bottom: 36px;
+}
+
+#version a {
+  color: #8A8888!important;
+  text-decoration: none;
+}
+
+.description {
+  border-left: 2px solid #dfdfdf;
+  color: rgb(119, 119, 119);
+  float: right;
+  display: block;
+  visibility: hidden;
+  padding: 5px;
+  width: 50%;
+  margin: 0!important;
+}
+
+.list li:hover .description {
+  visibility: visible;
+}
+
+header ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header .tab-link {
+  background: #fdfdfd;
+  cursor: pointer;
+  float: left;
+  padding: 10px 20px;
+}
+
+header .active, header li:hover {
+  border-bottom: 1px solid red;
+  background: #F1F0F0;
+}
+
+.container .tab {
+  display: none;
+}
+.container .active {
+  display: block!important;
+}
