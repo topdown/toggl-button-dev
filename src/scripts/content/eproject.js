@@ -16,12 +16,13 @@ togglbutton.render('.single-tasks .right-side:not(.toggl)', {observe: true}, fun
 		description = numElem.innerText + ' ' + description;
 	}
 
+	var project = projectElem.innerText.trim();
 	//console.log(description);
 
 	link = togglbutton.createTimerLink({
 		className: 'eproject',
 		description: description,
-		projectName: projectElem.innerText,
+		projectName: project,
 		calculateTotal: true
 	});
 
@@ -127,7 +128,7 @@ togglbutton.render('.home .table-recent-tasks tr:not(.toggl)', {observe: true}, 
 
 	projectName = '';
 	if ($('.project a span.label')) {
-		projectName = $('.project a span.label').textContent;
+		projectName = $('.project a span.label').textContent.trim();
 	}
 
 	//description = 'Task: #' + numElem.innerText + ' ' + titleElem.textContent.trim();
